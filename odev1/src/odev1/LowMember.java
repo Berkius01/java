@@ -64,8 +64,8 @@ public class LowMember implements IMembership {
 	}
 
 	@Override
-	public void setUserName(String name) {
-		// TODO Auto-generated method stub
+	public void setUserName(String username) {
+		this.username = username;
 		
 	}
 

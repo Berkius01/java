@@ -121,7 +121,7 @@ public class AnaSayfa extends JFrame implements MouseListener{
 		setSize(1500, 750);
 		setResizable(false);
 		setVisible(true);
-		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		if(member.getMember()=="admin") {
 			b3.setVisible(true);

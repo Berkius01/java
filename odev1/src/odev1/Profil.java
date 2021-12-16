@@ -64,7 +64,7 @@ public class Profil extends JFrame{
 		setSize(300, 250);
 		setResizable(false);
 		setVisible(true);
-		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		
 		MyEventHandler meh1 = new MyEventHandler();

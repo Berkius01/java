@@ -75,7 +75,7 @@ public class LoginPage extends JFrame {
 		setSize(300, 150);
 		setResizable(false);
 		setVisible(true);
-		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		MyEventHandler meh = new MyEventHandler();
 		f1.addActionListener(meh);

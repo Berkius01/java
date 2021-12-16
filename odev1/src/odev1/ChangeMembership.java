@@ -48,7 +48,7 @@ public class ChangeMembership extends JFrame{
 		setSize(280, 150);
 		setResizable(false);
 		setVisible(true);
-		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		MyEventHandler meh1 = new MyEventHandler();
 		but.addActionListener(meh1);
@@ -58,7 +58,7 @@ public class ChangeMembership extends JFrame{
 	public class MyEventHandler extends FakeDatabase implements ActionListener {
 		public void actionPerformed(ActionEvent ae) {
 			if(cb.getSelectedItem() == "ultra premium") {
-				log.add(member.getUserName() + " "+ member.getMember()+ " paketine çevirdi");
+				log.add(member.getUserName() + " "+ member.getMember()+" paketini ultra premium paketine çevirdi");
 				HighMember hm = new HighMember(member.getName(),member.getUserName(),member.getPw(),"ultra premium",member.getCard());
 				boolean control = member.getMark();
 				hm.setMark(control);
@@ -72,7 +72,7 @@ public class ChangeMembership extends JFrame{
 				af.setVisible(true);
 			}
 			else if(cb.getSelectedItem() == "premium") {
-				log.add(member.getUserName() + " "+ member.getMember()+ " paketine çevirdi");
+				log.add(member.getUserName() + " "+ member.getMember()+ " paketini premium paketine çevirdi");
 				MediumMember mm = new MediumMember(member.getName(),member.getUserName(),member.getPw(),"premium",member.getCard());
 				
 				//teker teker parametre ver
@@ -87,7 +87,7 @@ public class ChangeMembership extends JFrame{
 				af.setVisible(true);
 			}
 			else if(cb.getSelectedItem() == "standart") {
-				log.add(member.getUserName() + " "+ member.getMember()+ " paketine çevirdi");
+				log.add(member.getUserName() + " "+ member.getMember()+ " paketini standart paketine çevirdi");
 				LowMember lm = new LowMember(member.getName(),member.getUserName(),member.getPw(),"standart",member.getCard());
 				boolean control = member.getMark();
 				lm.setMark(control);

@@ -20,7 +20,7 @@ public class FreeMember implements IMembership{
 	}
 	@Override
 	public void setName(String name) {
-		// TODO Auto-generated method stub
+		this.name = name;
 		
 	}
 	
@@ -37,18 +37,18 @@ public class FreeMember implements IMembership{
 	@Override
 	public void setMember(String member) {
 		// TODO Auto-generated method stub
-		
+		this.member = member;
 	}
 
 	@Override
 	public String getMember() {
 		// TODO Auto-generated method stub
-		return card;
+		return member;
 	}
 
 	@Override
 	public void setCard(String card) {
-		// TODO Auto-generated method stub
+		this.card = card;
 		
 	}
 
@@ -59,7 +59,7 @@ public class FreeMember implements IMembership{
 	}
 	@Override
 	public void ToString() {
-		// TODO Auto-generated method stub
+		System.out.println("beleþ oluþtu");
 		
 	}
 	@Override
@@ -73,9 +73,8 @@ public class FreeMember implements IMembership{
 		return pw;
 	}
 	@Override
-	public void setUserName(String name) {
-		// TODO Auto-generated method stub
-		
+	public void setUserName(String username) {
+		this.username=username;
 	}
 	@Override
 	public String getUserName() {

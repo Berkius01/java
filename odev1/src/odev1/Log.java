@@ -6,13 +6,13 @@ import java.util.ArrayList;
 import javax.swing.*;
 
 public class Log  extends JFrame{
-	private JLabel label;
+	//private JLabel label;
 	private JTextArea txt;
 	public static ArrayList<String> log = new ArrayList<>();
 	FakeDatabase db = new FakeDatabase();
 	public Log() {
 		System.out.println("evet2");
-		label = new JLabel();
+		//label = new JLabel();
 		txt = new JTextArea();
 		Container c1 = getContentPane();
 		SpringLayout layout = new SpringLayout();

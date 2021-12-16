@@ -16,39 +16,31 @@ public class Movie2  implements IMovie {
 		this.name=name;
 	}
 
-	@Override
 	public String getName() {
-		
 		return name;
 	}
 
-	@Override
+
 	public void setScore(String score) {
 		
 		this.score = score;
 	}
 
-	@Override
-	public String getScore() {
-		
+	public String getScore() {	
 		return score;
 	}
 
-	@Override
 	public void setInfo(String info) {
 		this.info = info;
-		
 	}
 
 	@Override
 	public String getInfo() {
-		
 		return info;
 	}
 
 	@Override
 	public String getPath() {
-		// TODO Auto-generated method stub
 		return path;
 	}
 
